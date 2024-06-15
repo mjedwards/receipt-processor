@@ -27,7 +27,6 @@ npm install
 After installing the dependencies in the previous step, run the following command:
 
 ```bash
-bash
 npm run dev
 ```
 
