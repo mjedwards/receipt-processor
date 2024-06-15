@@ -14,21 +14,29 @@ In a terminal run:
 
 ```bash
 git clone <project-url>
+```
 
 ### 2. Install Dependencies
 Open a terminal and navigate to the project root directory and run:
 
-bash
+```bash
 npm install
+```
 
 ### 3. Run Locally
 After installing the dependencies in the previous step, run the following command:
 
+```bash
 bash
 npm run dev
+```
 
 ### 4. Verify Application Running
-You should see output in the terminal indicating that the server is running on port 8080.
+You should see output in the terminal indicating the following
+
+```bash 
+server is running on port 8080.
+```
 
 Once the application is running, you can test the API endpoints using tools like Postman or Insomnia.
 
@@ -41,19 +49,25 @@ If you don't have Docker installed, follow the official installation instruction
 ### 2. Build the Docker Image
 Open Docker after installation and open a terminal and navigate to the project root directory where the Dockerfile is located and run:
 
-bash
+```bash
 docker build -t receipt-processor .
+```
 
 ### 3. Start the Docker Container
 Run the following command to start the container:
 
-bash
+```bash
 docker run -p 8080:8080 receipt-processor
+```
 
 This command maps the container's port 8080 to your host machine's port 8080.
 
 ### 4. Verify Application Running
-You should see output in the terminal indicating that the server is running on port 8080.
+You should see output in the terminal indicating the following: 
+
+```bash
+server is running on port 8080.
+```
 
 ### Testing the API
 Once the application is running, you can test the API endpoints using tools like Postman or Insomnia.
@@ -62,6 +76,7 @@ Once the application is running, you can test the API endpoints using tools like
 POST - /receipts/process: This endpoint processes a new receipt.
 GET - /receipts/:id/process: This endpoint retrieves a processed receipt with the specified ID.
 
+```bash
 Request Body Schema (for POST /receipts/process)
 json
 
@@ -78,7 +93,8 @@ json
   ],
   "total": "string"              // Total amount of the receipt
 }
-
+```
+```bash
 Example Request Body
 json
 
@@ -95,7 +111,8 @@ json
   ],
   "total": "35.35"
 }
+```
 
 ### Sources
 Fetch Rewards Receipt Processor Challenge - https://github.com/fetch-rewards/receipt-processor-challenge?tab=readme-ov-file
-```
+
