@@ -16,13 +16,13 @@ In a terminal run:
 git clone <project-url>
 
 ### 2. Install Dependencies
-Navigate to the project root directory and run:
+Open a terminal and navigate to the project root directory and run:
 
 bash
 npm install
 
 ### 3. Run Locally
-After installing the dependencies, from the step above run the following command:
+After installing the dependencies in the previous step, run the following command:
 
 bash
 npm run dev
