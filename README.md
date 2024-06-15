@@ -95,5 +95,5 @@ json
 }
 
 Sources
-Fetch Rewards Receipt Processor Challenge
+Fetch Rewards Receipt Processor Challenge - https://github.com/fetch-rewards/receipt-processor-challenge?tab=readme-ov-file
 ```
