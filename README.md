@@ -73,6 +73,7 @@ Once the application is running, you can test the API endpoints using tools like
 
 ### Available Endpoints
 POST - /receipts/process: This endpoint processes a new receipt.
+
 GET - /receipts/:id/process: This endpoint retrieves a processed receipt with the specified ID.
 
 ```bash
