@@ -10,39 +10,41 @@ This project is a receipt processing application built using Node.js. It allows 
 
 ### 1. Clone the Project
 
+In a terminal run:
+
 ```bash
 git clone <project-url>
 
-2. Install Dependencies
+### 2. Install Dependencies
 Navigate to the project root directory and run:
 
 bash
 npm install
 
-3. Run Locally
+### 3. Run Locally
 After installing the dependencies, from the step above run the following command:
 
 bash
 npm run dev
 
-4. Verify Application Running
+### 4. Verify Application Running
 You should see output in the terminal indicating that the server is running on port 8080.
 
 Once the application is running, you can test the API endpoints using tools like Postman or Insomnia.
 
-Running the Application with Docker
+### Running the Application with Docker
 A Dockerfile is provided, so follow the steps below to run the application.
 
-1. Install Docker
+### 1. Install Docker
 If you don't have Docker installed, follow the official installation instructions: https://docs.docker.com/get-docker/
 
-2. Build the Docker Image
+### 2. Build the Docker Image
 Open Docker after installation and open a terminal and navigate to the project root directory where the Dockerfile is located and run:
 
 bash
 docker build -t receipt-processor .
 
-3. Start the Docker Container
+### 3. Start the Docker Container
 Run the following command to start the container:
 
 bash
@@ -50,13 +52,13 @@ docker run -p 8080:8080 receipt-processor
 
 This command maps the container's port 8080 to your host machine's port 8080.
 
-4. Verify Application Running
+### 4. Verify Application Running
 You should see output in the terminal indicating that the server is running on port 8080.
 
-Testing the API
+### Testing the API
 Once the application is running, you can test the API endpoints using tools like Postman or Insomnia.
 
-Available Endpoints
+### Available Endpoints
 POST - /receipts/process: This endpoint processes a new receipt.
 GET - /receipts/:id/process: This endpoint retrieves a processed receipt with the specified ID.
 
@@ -94,6 +96,6 @@ json
   "total": "35.35"
 }
 
-Sources
+### Sources
 Fetch Rewards Receipt Processor Challenge - https://github.com/fetch-rewards/receipt-processor-challenge?tab=readme-ov-file
 ```
